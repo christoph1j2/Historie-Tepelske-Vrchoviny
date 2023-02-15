@@ -1,4 +1,19 @@
 body {
     background-color: black;
 }
+/* https://codepen.io/dudleystorey/pen/raOeez */
+figure#slideshow img { 
+    position: absolute; 
+    left: 0; top: 0; 
+    width: 100%; height: auto; 
+    opacity: 0; 
+  }
+  figure#slideshow img:first-child { position: relative; }
+  /*                                          */
 
+@keyframes fadey {
+    0% { opacity: 0; }
+    15% { opacity: 1; }
+    85% { opacity: 1; }
+    100% { opacity: 0; }
+}
